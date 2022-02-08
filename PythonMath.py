@@ -1,8 +1,4 @@
 class PythonMath(object):
-    def showBox(self, x):
-        # 配列表示を逆表示にする
-        print(x)
-
     def transRadix2to10(self, x):
         # 基数変換 2進数 → 10進数
         y = 0

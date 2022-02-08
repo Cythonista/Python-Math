@@ -8,7 +8,7 @@ def main():
     # 2進数を10進数へ変換
     x = [1, 1, 0]
     y = math.transRadix2to10(x)
-    math.showBox(x)
+    print(x)
     print(y)
 
     print('')
