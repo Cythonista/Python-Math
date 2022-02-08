@@ -6,9 +6,9 @@ def main():
     math = PythonMath()
 
     # 2進数を10進数へ変換
-    x = [0, 1, 1]
+    x = [1, 1, 0]
     y = math.transRadix2to10(x)
-    math.showBoxReversed(x)
+    math.showBox(x)
     print(y)
 
     print('')
@@ -20,7 +20,9 @@ def main():
 
     # 2進少数を10進数へ変換
     x = [1, 0, 1, 0, 1]
-    math.showBoxReversed(x)
+    y = math.transRadix2Dto10(x)
+    print(y)
+
 
 
 if __name__ == '__main__':

@@ -1,13 +1,20 @@
 class PythonMath(object):
-    def showBoxReversed(self, x):
+    def showBox(self, x):
         # 配列表示を逆表示にする
-        print(x[::-1])
+        print(x)
 
     def transRadix2to10(self, x):
         # 基数変換 2進数 → 10進数
         y = 0
-        for i,j in enumerate(x):
+        for i,j in enumerate(reversed(x)):
             y += 2**i * j
+        return y
+
+    def transRadix2Dto10(self, x):
+        # 基数変換 2進少数 → 10進数
+        y = 0
+        for i,j in enumerate(x):
+            y += j / (2**(i+1))
         return y
 
     def transRadix8to10(self, x):
@@ -21,7 +28,3 @@ class PythonMath(object):
             print('Type Error: 8 ~ 9 Not Octal')
         else:
             return x
-
-    def transRadix2Dto10(self, x):
-        # 基数変換 2進少数 → 10進数
-        pass
