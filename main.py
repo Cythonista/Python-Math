@@ -7,7 +7,7 @@ def main():
 
     # 2進数を10進数へ変換
     x = [1, 1, 0]
-    y = math.tr2to10(x)
+    y = math.convertBinaryToDecimal(x)
     print(x)
     print(y)
 
@@ -15,12 +15,12 @@ def main():
 
     # 2進少数を10進数へ変換
     x = [1, 0, 1, 0, 1]
-    y = math.tr2Dto10(x)
+    y = math.convertBinaryDigitToDecimal(x)
     print(y)
 
     # 8進数を10進数へ変換
     x = 21
-    y = math.tr8to10(x)
+    y = math.convertOctalToDecimal(x)
     print(y)
 
 
